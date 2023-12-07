@@ -1,13 +1,14 @@
 <?php
-
+session_start();
+ob_start();
 @include 'config.php';
 
-session_start();
 
 $admin_id = $_SESSION['admin_id'];
 
 if(!isset($admin_id)){
    header('location:index.php');
+   ob_end_flush();
 };
 
 if(isset($_POST['add_product'])){

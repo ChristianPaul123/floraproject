@@ -1,7 +1,7 @@
 @import url('https://fonts.googleapis.com/css2?family=Rubik:wght@300;400;500;600&display=swap');
 
 :root{
-   --pink:#e84393;
+   --gold:#F6C55E;
    --red:#c0392b;
    --orange:#f39c12;
    --black:#333;
@@ -11,14 +11,12 @@
    --light-bg:#f5f5f5;
    --border:.2rem solid var(--black);
    --box-shadow:0 .5rem 1rem rgba(0,0,0,.1);
-   --main-color: #443;
-   --sub-color: #F6C55E;
-   --least-color: #fff;
+   --light-black: #443;
    --border-radius: 95% 4% 97% 5% / 4% 94% 3% 95%;
    --border-radius-hover: 4% 95% 6% 95% / 95% 4% 92% 5%;
-   --border: .2rem solid var(--main-color);
-   --border-hover: .2rem dashed var(--main-color);
+   --border-hover: .2rem dashed var(--black);
 }
+
 
 *{
    font-family: 'Poppins', sans-serif;
@@ -32,7 +30,7 @@
 }
 
 *::selection{
-   background-color: var(--pink);
+   background-color: var(--gold);
    color:var(--white);
 }
 
@@ -46,7 +44,7 @@
 }
 
 *::-webkit-scrollbar-thumb{
-   background-color: var(--pink);
+   background-color: var(--gold);
 }
 
 html{
@@ -70,19 +68,6 @@ section{
    color:var(--black);
    text-transform: uppercase;
    font-size: 4rem;
-}
-
-.btn,
-.delete-btn,
-.option-btn{
-   display: inline-block;
-   border-radius: .5rem;
-   margin-top: 1rem;
-   font-size: 1.8rem;
-   color:var(--white);
-   cursor: pointer;
-   padding:1rem 3rem;
-   text-transform: capitalize;
 }
 
 .message{
@@ -114,20 +99,22 @@ section{
    transform: rotate(90deg);
 }
 
-.empty{
-   padding:1.5rem;
-   font-size: 2rem;
-   color:var(--red);
-   border:var(--border);
-   box-shadow: var(--box-shadow);
-   text-align: center;
-   background-color: var(--white);
+.btn,
+.delete-btn,
+.option-btn{
+   display: inline-block;
    border-radius: .5rem;
+   margin-top: 1rem;
+   font-size: 1.8rem;
+   color:var(--white);
+   cursor: pointer;
+   padding:1rem 3rem;
    text-transform: capitalize;
 }
 
+
 .btn{
-   background-color: var(--pink);
+   background-color: var(--gold);
 }
 
 .delete-btn{
@@ -144,6 +131,18 @@ section{
    background-color: var(--black);
 }
 
+.empty{
+   padding:1.5rem;
+   font-size: 2rem;
+   color:var(--red);
+   border:var(--border);
+   box-shadow: var(--box-shadow);
+   text-align: center;
+   background-color: var(--white);
+   border-radius: .5rem;
+   text-transform: capitalize;
+}
+
 @keyframes fadeIn{
    0%{
       transform: translateY(1rem);
@@ -153,18 +152,18 @@ section{
 .header{
    position: sticky;
    top:0; left:0; right:0;
+   background-color: var(--black);
    z-index: 1000;
-   background-color: var(--white);
    box-shadow: var(--box-shadow);
 }
 
 .header .flex{
+   margin: 0 auto;
    display: flex;
    align-items: center;
    justify-content: space-between;
-   padding:2rem;
+   padding:1.5rem 2rem;
    max-width: 1200px;
-   margin:0 auto;
    position: relative;
 }
 
@@ -183,18 +182,18 @@ section{
 }
 
 .header .flex .account-box.active{
-   display: inline-block;
+   display: block;
 }
 
 .header .flex .account-box p{
    padding-bottom: 1rem;
    font-size: 2rem;
-   color:var(--light-color);
+   color:var(--white);
    line-height: 1.5;
 }
 
 .header .flex .account-box p span{
-   color:var(--pink);
+   color:var(--gold);
 }
 
 .header .flex .account-box div{
@@ -211,15 +210,15 @@ section{
    text-decoration: underline;
 }
 
-.header .flex .icons div{
+.header .flex .icons > div{
    font-size: 2.5rem;
-   margin-left: 1.7rem;
+   margin-left: 1rem;
+   color:var(--white);
    cursor: pointer;
-   color:var(--black);
 }
 
-.header .flex .icons div:hover{
-   color:var(--pink);
+.header .flex .icons > div:hover{
+   color:var(--gold);
 }
 
 .header .flex .navbar a{
@@ -230,16 +229,26 @@ section{
 
 .header .flex .navbar a:hover{
    text-decoration: underline;
-   color:var(--pink);
+   color:var(--gold);
 }
 
 .header .flex .logo{
    font-size: 2.5rem;
-   color:var(--black);
+   color:var(--white);
 }
 
 .header .flex .logo span{
-   color:var(--pink);
+   color:var(--gold);
+}
+
+.header .flex .icons .fa-bars{
+   font-size: 3rem;
+   color: var(--white);
+   border-radius: .5rem;
+   padding: .5rem 1.5rem;
+   cursor: pointer;
+   border: .1rem solid rgba(0,0,0,.3);
+   display: none;
 }
 
 #menu-btn{
@@ -339,7 +348,7 @@ section{
 }
 
 .show-products .box-container .box .price{
-   background-color: var(--pink);
+   background-color: var(--gold);
    position: absolute;
    top:1rem; left:1rem;
    border-radius: .5rem;
@@ -426,7 +435,7 @@ section{
 }
 
 .placed-orders .box-container .box p span{
-   color:var(--pink);
+   color:var(--gold);
 }
 
 .placed-orders .box-container .box form{
@@ -472,7 +481,7 @@ section{
 }
 
 .users .box-container .box p span{
-   color:var(--pink);
+   color:var(--gold);
 }
 
 .users .box-container .box .delete-btn{
@@ -505,7 +514,7 @@ section{
 }
 
 .messages .box-container .box p span{
-   color:var(--pink);
+   color:var(--gold);
 }
 
 

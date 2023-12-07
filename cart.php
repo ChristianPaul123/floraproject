@@ -1,24 +1,28 @@
 <?php
-
+session_start();
+ob_start();
 @include 'config.php';
 
-session_start();
+
 
 $user_id = $_SESSION['user_id'];
 
 if(!isset($user_id)){
    header('location:index.php');
+   ob_end_flush();
 };
 
 if(isset($_GET['delete'])){
     $delete_id = $_GET['delete'];
     mysqli_query($conn, "DELETE FROM `cart` WHERE id = '$delete_id'") or die('query failed');
     header('location:cart.php');
+    ob_end_flush();
 }
 
 if(isset($_GET['delete_all'])){
     mysqli_query($conn, "DELETE FROM `cart` WHERE user_id = '$user_id'") or die('query failed');
     header('location:cart.php');
+    ob_end_flush();
 };
 
 if(isset($_POST['update_quantity'])){

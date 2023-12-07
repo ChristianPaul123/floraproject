@@ -1,5 +1,6 @@
 <?php
-
+session_start();
+ob_start();
 @include 'config.php';
 
 if(isset($_POST['submit'])){
@@ -24,6 +25,7 @@ if(isset($_POST['submit'])){
          mysqli_query($conn, "INSERT INTO `users`(name, email, password) VALUES('$name', '$email', '$pass')") or die('query failed');
          $message[] = 'registered successfully!';
          header('location:index.php');
+         ob_end_flush();
       }
    }
 

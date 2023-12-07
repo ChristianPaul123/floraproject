@@ -1,13 +1,15 @@
 <?php
-
+session_start();
+ob_start();
 @include 'config.php';
 
-session_start();
+
 
 $admin_id = $_SESSION['admin_id'];
 
 if(!isset($admin_id)){
    header('location:index.php');
+   ob_end_flush();
 };
 
 if(isset($_POST['update_order'])){
@@ -21,6 +23,7 @@ if(isset($_GET['delete'])){
    $delete_id = $_GET['delete'];
    mysqli_query($conn, "DELETE FROM `orders` WHERE id = '$delete_id'") or die('query failed');
    header('location:admin_orders.php');
+   ob_end_flush();
 }
 
 ?>

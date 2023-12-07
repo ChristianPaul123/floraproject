@@ -1,9 +1,9 @@
 <?php
+session_start();
+ob_start();
 
 @include 'config.php';
 
-
-session_start();
 
 if(isset($_POST['submit'])){
 
@@ -25,6 +25,7 @@ if(isset($_POST['submit'])){
          $_SESSION['admin_email'] = $row['email'];
          $_SESSION['admin_id'] = $row['id'];
          header('location:admin_page.php');
+         ob_end_flush();
 
       }elseif($row['user_type'] == 'user'){
 
@@ -32,6 +33,7 @@ if(isset($_POST['submit'])){
          $_SESSION['user_email'] = $row['email'];
          $_SESSION['user_id'] = $row['id'];
          header('location:home.php');
+         ob_end_flush();
 
       }else{
          $message[] = 'no user found!';

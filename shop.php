@@ -1,8 +1,7 @@
 <?php
-
+session_start();
 @include 'config.php';
 
-session_start();
 
 $user_id = $_SESSION['user_id'];
 

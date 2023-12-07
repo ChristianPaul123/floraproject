@@ -22,7 +22,6 @@
                 <a href="#"><i class="fas fa-phone"></i> 0965 433 3399</a>
                 <a href="#"><i class="fas fa-envelope"></i> floraflowershop.ph@gmail.com</a>
                 <img src="/image/stock_image/payment.png" alt="">
-            <p> <i class="fas fa-map-marker-alt"></i> mumbai, india - 123-456 </p>
         </div>
 
         <div class="box">

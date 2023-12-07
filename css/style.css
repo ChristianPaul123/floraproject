@@ -377,7 +377,7 @@ section{
 .header .flex .account-box p{
    padding-bottom: 1rem;
    font-size: 2rem;
-   color:var(--);
+   color:var(--black);
    line-height: 1.5;
 }
 
