@@ -144,7 +144,7 @@ if(!isset($user_id)){
             <p>we're devoted to infusing life's moments with nature's beauty. 
                 Our passion for flowers drives us to craft personalized, expressive arrangements 
                 that speak volumes and create lasting memories.</p>
-            <a href="#reviews" class="btn">clients reviews</a>
+            <!--<a href="#reviews" class="btn">clients reviews</a>-->
         </div>
 
     </div>
