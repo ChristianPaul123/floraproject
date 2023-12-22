@@ -101,7 +101,10 @@ if(isset($_POST['add_to_cart'])){
 
    <div class="content">
       <h3>old collections</h3>
-      <p>Lorem ipsum dolor sit amet, consectetur adipisicing elit. Maxime reiciendis, modi placeat sit cumque molestiae.</p>
+      <p>Welcome to Flora Flower Shop, where we infuse passion into petals, 
+         creating personalized floral experiences that bring nature's beauty 
+         to life in every arrangement. Explore our exquisite blooms and let us 
+         craft a memorable moment for you.</p>
       <a href="about.php" class="btn">discover more</a>
    </div>
 
@@ -150,7 +153,7 @@ if(isset($_POST['add_to_cart'])){
 
    <div class="content">
       <h3>have any questions?</h3>
-      <p>Lorem ipsum dolor, sit amet consectetur adipisicing elit. Distinctio officia aliquam quis saepe? Quia, libero.</p>
+      <p>Feel free to ask! I'm here to assist with any inquiries or help you may need.</p>
       <a href="contact.php" class="btn">contact us</a>
    </div>
 
