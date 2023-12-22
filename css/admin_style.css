@@ -114,7 +114,7 @@ section{
 
 
 .btn{
-   background-color: var(--gold);
+   background-color: var(--orange);
 }
 
 .delete-btn{
@@ -132,8 +132,6 @@ section{
 }
 
 .empty{
-   padding:1.5rem;
-   font-size: 2rem;
    color:var(--red);
    border:var(--border);
    box-shadow: var(--box-shadow);
@@ -141,6 +139,18 @@ section{
    background-color: var(--white);
    border-radius: .5rem;
    text-transform: capitalize;
+}
+
+.empty i{
+   padding:1.5rem;
+   font-size: 4rem;
+   color:var(--red);
+   display: block;
+}
+
+.empty p{
+   padding:1.5rem;
+   font-size: 2rem;
 }
 
 @keyframes fadeIn{
@@ -174,7 +184,7 @@ section{
    border-radius: .5rem;
    box-shadow: var(--box-shadow);
    background-color: var(--white);
-   padding:2rem;
+   padding:2rem 1rem;
    text-align: center;
    border:var(--border);
    display: none;
@@ -185,11 +195,18 @@ section{
    display: block;
 }
 
+.header .flex .account-box i{
+   padding: 1rem;
+   font-size: 5rem;
+   color:var(--black);
+}
+
 .header .flex .account-box p{
    padding-bottom: 1rem;
    font-size: 2rem;
-   color:var(--white);
+   color:var(--black);
    line-height: 1.5;
+   text-transform: capitalize;
 }
 
 .header .flex .account-box p span{
@@ -222,14 +239,16 @@ section{
 }
 
 .header .flex .navbar a{
-   margin:0 1rem;
+   margin:0 1rem 0rem 0rem;
    font-size: 2rem;
    color:var(--light-color);
+   text-transform: capitalize;
 }
 
 .header .flex .navbar a:hover{
    text-decoration: underline;
    color:var(--gold);
+
 }
 
 .header .flex .logo{
@@ -278,6 +297,11 @@ section{
    color:var(--black);
 }
 
+.dashboard .box-container .box i{
+   font-size: 4.5rem;
+   color:var(--gold);
+}
+
 .dashboard .box-container .box p{
    padding:1.5rem;
    border-radius: .5rem;
@@ -286,6 +310,82 @@ section{
    border:var(--border);
    margin-top: 2rem;
    font-size: 2rem;
+   text-transform: capitalize;
+}
+
+ h2{
+   font-size: 4rem;
+   text-transform: uppercase;
+   text-align: center;
+   color:var(--black);
+   margin-bottom: 1rem;
+   margin-top: 1rem;
+}
+
+.show-products {
+   max-width: 1200px;
+   margin: 0 auto;
+   display: flex;
+   align-items: center;
+   justify-content: center;
+   padding: 2rem 0rem;
+}
+
+.show-products .box-container{
+   display: grid;
+   grid-template-columns: repeat(auto-fit, 30rem);
+   gap:1.5rem;
+   align-items: flex-start;
+   max-width: 100rem;
+   padding: 1.5rem 1rem;
+   max-height: 570px;
+   margin: 0 1rem;
+   border: 1rem solid var(--light-black);
+   border-radius: 1.5rem 1.5rem 1.5rem 1.5rem;
+   background-color: var(--light-white);
+   justify-content: center;
+   overflow-x: hidden;
+}
+
+.show-products .box-container .box{
+   text-align: center;
+   padding:2rem;
+   border:var(--border);
+   background-color: var(--white);
+   box-shadow: var(--box-shadow);
+   border-radius: .5rem;
+   position: relative;
+}
+
+.show-products .box-container .box .image{
+   height: 30rem;
+   margin-bottom: .5rem;
+}
+
+.show-products .box-container .box .price{
+   background-color: var(--gold);
+   position: absolute;
+   top:1rem; left:1rem;
+   border-radius: .5rem;
+   color:var(--white);
+   padding:1rem;
+   font-size: 2rem;
+}
+
+.show-products .box-container .box .name{
+   margin:1rem 0;
+   font-size: 2rem;
+   color:var(--gold);
+}
+
+.show-products .box-container .box .details{
+   line-height: 1.5;
+   color:var(--light-color);
+   font-size: 1.5rem;
+   padding:.5rem 0;
+   text-overflow: ellipsis;
+   height: 105px;
+   overflow-x: hidden;
 }
 
 .add-products form{
@@ -320,54 +420,6 @@ section{
 .add-products form textarea{
    height: 15rem;
    resize: none;
-}
-
-.show-products .box-container{
-   display: grid;
-   grid-template-columns: repeat(auto-fit, 30rem);
-   gap:1.5rem;
-   align-items: flex-start;
-   max-width: 1200px;
-   margin: 0 auto;
-   justify-content: center;
-}
-
-.show-products .box-container .box{
-   text-align: center;
-   padding:2rem;
-   border:var(--border);
-   background-color: var(--white);
-   box-shadow: var(--box-shadow);
-   border-radius: .5rem;
-   position: relative;
-}
-
-.show-products .box-container .box .image{
-   height: 30rem;
-   margin-bottom: .5rem;
-}
-
-.show-products .box-container .box .price{
-   background-color: var(--gold);
-   position: absolute;
-   top:1rem; left:1rem;
-   border-radius: .5rem;
-   color:var(--white);
-   padding:1rem;
-   font-size: 2rem;
-}
-
-.show-products .box-container .box .name{
-   margin:1rem 0;
-   font-size: 2rem;
-   color:var(--black);
-}
-
-.show-products .box-container .box .details{
-   line-height: 1.5;
-   color:var(--light-color);
-   font-size: 1.5rem;
-   padding:.5rem 0;
 }
 
 .update-product form{
@@ -428,13 +480,18 @@ section{
    border-radius: .5rem;
 }
 
-.placed-orders .box-container .box p{
+.placed-orders .box-container .box .details {
+   height: 225px;
+   overflow-x: hidden;
+}
+
+.placed-orders .box-container .box .details p{
    margin-bottom: 1rem;
    font-size: 2rem;
    color:var(--light-color);
 }
 
-.placed-orders .box-container .box p span{
+.placed-orders .box-container .box .details p span{
    color:var(--gold);
 }
 
@@ -473,11 +530,17 @@ section{
    text-align: center;
 }
 
+.users .box-container .box i{
+   font-size: 4.5rem;
+   color:var(--gold);
+}
+
 .users .box-container .box p{
    font-size: 2rem;
    color:var(--light-color);
    margin-bottom: 1rem;
    line-height: 1.5;
+   text-overflow: ellipsis;
 }
 
 .users .box-container .box p span{

@@ -198,15 +198,30 @@ section{
 
 .form-container{
    display: flex;
+   flex-direction: row;
    align-items: center;
    justify-content: center;
    min-height: 100vh;
    background: url(../image/login-bg.jpg) no-repeat;
    background-position: center;
    background-size: cover;
+   overflow-x: hidden;
+   transition: all 0.5s ease-in-out;
+}
+
+.form-container form img {
+   width: 8rem;
+   height: 8rem;
+   margin: 2rem 2rem;
+   border-radius: 50rem;
+   box-shadow: .5rem .5rem 1rem black;
 }
 
 .form-container form{
+   display: flex;
+   flex-direction: column;
+   align-items: center;
+   justify-content: center;
    padding:2rem;
    border-radius: .5rem;
    border:var(--border);
@@ -217,7 +232,7 @@ section{
 }
 
 .form-container form h3{
-   font-size: 2.5rem;
+   font-size: 3rem;
    text-transform: uppercase;
    color:var(--gold);
    margin-bottom: 1rem;
@@ -238,6 +253,7 @@ section{
    margin-top: 1.5rem;
    font-size: 2rem;
    color:var(--light-color);
+   text-transform: capitalize;
 }
 
 .form-container form p a{
@@ -1250,8 +1266,9 @@ section{
    margin:0 auto;
    display: flex;
    flex-wrap: wrap;
+   align-items: center;
    gap:1.5rem;
-   align-items: flex-start;
+   justify-content: center;
 }
 
 .placed-orders .box-container .box{

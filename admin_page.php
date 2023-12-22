@@ -41,6 +41,7 @@ if(!isset($admin_id)){
    <div class="box-container">
 
       <div class="box">
+      <i class="fa fa-shopping-cart" aria-hidden="true"></i>
          <?php
             $total_pendings = 0;
             $select_pendings = mysqli_query($conn, "SELECT * FROM `orders` WHERE payment_status = 'pending'") or die('query failed');
@@ -48,11 +49,12 @@ if(!isset($admin_id)){
                $total_pendings += $fetch_pendings['total_price'];
             };
          ?>
-         <h3>$<?php echo $total_pendings; ?>/-</h3>
-         <p>total pendings</p>
+         <h3>₱<?php echo $total_pendings; ?></h3>
+         <p>pendings orders total</p>
       </div>
 
       <div class="box">
+         <i class="fas fa-star"></i>
          <?php
             $total_completes = 0;
             $select_completes = mysqli_query($conn, "SELECT * FROM `orders` WHERE payment_status = 'completed'") or die('query failed');
@@ -60,11 +62,12 @@ if(!isset($admin_id)){
                $total_completes += $fetch_completes['total_price'];
             };
          ?>
-         <h3>$<?php echo $total_completes; ?>/-</h3>
-         <p>completed paymets</p>
+         <h3>₱<?php echo $total_completes; ?></h3>
+         <p>completed orders total</p>
       </div>
 
       <div class="box">
+      <i class="fa fa-cart-plus" aria-hidden="true"></i>
          <?php
             $select_orders = mysqli_query($conn, "SELECT * FROM `orders`") or die('query failed');
             $number_of_orders = mysqli_num_rows($select_orders);
@@ -74,6 +77,7 @@ if(!isset($admin_id)){
       </div>
 
       <div class="box">
+      <i class="fa fa-archive" aria-hidden="true"></i>
          <?php
             $select_products = mysqli_query($conn, "SELECT * FROM `products`") or die('query failed');
             $number_of_products = mysqli_num_rows($select_products);
@@ -83,6 +87,8 @@ if(!isset($admin_id)){
       </div>
 
       <div class="box">
+      <i class="fa fa-user" aria-hidden="true"></i>
+      
          <?php
             $select_users = mysqli_query($conn, "SELECT * FROM `users` WHERE user_type = 'user'") or die('query failed');
             $number_of_users = mysqli_num_rows($select_users);
@@ -92,6 +98,7 @@ if(!isset($admin_id)){
       </div>
 
       <div class="box">
+      <i class="fa fa-id-card" aria-hidden="true"></i>
          <?php
             $select_admin = mysqli_query($conn, "SELECT * FROM `users` WHERE user_type = 'admin'") or die('query failed');
             $number_of_admin = mysqli_num_rows($select_admin);
@@ -101,6 +108,7 @@ if(!isset($admin_id)){
       </div>
 
       <div class="box">
+      <i class="fa fa-users" aria-hidden="true"></i>
          <?php
             $select_account = mysqli_query($conn, "SELECT * FROM `users`") or die('query failed');
             $number_of_account = mysqli_num_rows($select_account);
@@ -110,6 +118,7 @@ if(!isset($admin_id)){
       </div>
 
       <div class="box">
+      <i class="fa fa-envelope" aria-hidden="true"></i>
          <?php
             $select_messages = mysqli_query($conn, "SELECT * FROM `message`") or die('query failed');
             $number_of_messages = mysqli_num_rows($select_messages);

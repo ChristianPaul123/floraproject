@@ -63,7 +63,7 @@ if(isset($_GET['delete'])){
       <?php
          }
       }else{
-         echo '<p class="empty">you have no messages!</p>';
+         echo '<div class="empty"><i class="fa fa-times-circle" aria-hidden="true"></i><p>you have no messages!</p></div';
       }
       ?>
    </div>

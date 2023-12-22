@@ -67,14 +67,14 @@ if(isset($_POST['update_product'])){
 <section class="update-product">
 
 <?php
-
    $update_id = $_GET['update'];
    $select_products = mysqli_query($conn, "SELECT * FROM `products` WHERE id = '$update_id'") or die('query failed');
    if(mysqli_num_rows($select_products) > 0){
       while($fetch_products = mysqli_fetch_assoc($select_products)){
 ?>
-
+<section class="add-products">
 <form action="" method="post" enctype="multipart/form-data">
+<h3>Update product</h3>
    <img src="uploaded_img/<?php echo $fetch_products['image']; ?>" class="image"  alt="">
    <input type="hidden" value="<?php echo $fetch_products['id']; ?>" name="update_p_id">
    <input type="hidden" value="<?php echo $fetch_products['image']; ?>" name="update_p_image">
@@ -85,11 +85,12 @@ if(isset($_POST['update_product'])){
    <input type="submit" value="update product" name="update_product" class="btn">
    <a href="admin_products.php" class="option-btn">go back</a>
 </form>
+</section>
 
 <?php
       }
    }else{
-      echo '<p class="empty">no update product select</p>';
+      echo '<div class="empty"><i class="fa fa-times-circle" aria-hidden="true"></i><p>no update product selected</p></div';
    }
 ?>
 

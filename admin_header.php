@@ -12,11 +12,9 @@ if(isset($message)){
 ?>
 
 <header class="header">
-
    <div class="flex">
-
+   <div class="header-nav">
       <a href="admin_page.php" class="logo">Flora<span>Panel</span></a>
-
       <nav class="navbar">
          <a href="admin_page.php">home</a>
          <a href="admin_products.php">products</a>
@@ -24,6 +22,7 @@ if(isset($message)){
          <a href="admin_users.php">users</a>
          <a href="admin_contacts.php">messages</a>
       </nav>
+   </div>
 
       <div class="icons">
          <div id="menu-btn" class="fas fa-bars"></div>
@@ -31,10 +30,11 @@ if(isset($message)){
       </div>
 
       <div class="account-box">
+      <i class="fa fa-user-circle" aria-hidden="true"></i>
          <p>username : <span><?php echo $_SESSION['admin_name']; ?></span></p>
          <p>email : <span><?php echo $_SESSION['admin_email']; ?></span></p>
          <a href="logout.php" class="delete-btn">logout</a>
-         <div>new <a href="index.php">login</a> | <a href="register.php">register</a> </div>
+         <!--<div>new <a href="index.php">login</a> | <a href="register.php">register</a> </div>-->
       </div>
 
    </div>
