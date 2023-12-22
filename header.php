@@ -46,6 +46,7 @@ if(isset($message)){
         </div>
 
         <div class="account-box">
+        <i class="fa fa-user-circle" aria-hidden="true"></i>
             <h1 style="text-align: center; font-weight: bold; font-size: 28px; color: var(--black);">Account</h1>;
             <p>username : <span><?php echo $_SESSION['user_name']; ?></span></p>
             <p>email : <span><?php echo $_SESSION['user_email']; ?></span></p>

@@ -300,6 +300,8 @@ section{
    top: -5px;
 }
 
+
+
 .header .flex .navbar ul{
    list-style: none;
 }
@@ -388,6 +390,12 @@ section{
 
 .header .flex .account-box.active{
    display: block;
+}
+
+.header .flex .account-box i{
+   padding: 1rem;
+   font-size: 5rem;
+   color:var(--black);
 }
 
 .header .flex .account-box p{
