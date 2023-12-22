@@ -106,7 +106,7 @@ if(!isset($user_id)){
 
         <div class="content">
             <h3>why choose us?</h3>
-            <p>Lorem ipsum dolor sit amet consectetur adipisicing elit. Eum odit voluptatum alias sed est in magni nihil nisi deleniti nostrum.</p>
+            <p>Where effortless surprises meet stunning floral experiences</p>
             <a href="shop.php" class="btn">shop now</a>
         </div>
 
@@ -116,7 +116,14 @@ if(!isset($user_id)){
 
         <div class="content">
             <h3>what we provide?</h3>
-            <p>Lorem ipsum dolor sit amet consectetur adipisicing elit. Eum odit voluptatum alias sed est in magni nihil nisi deleniti nostrum.</p>
+            <p>At Flora Flower Shop, we pride ourselves on providing an 
+                array of exquisite blooms, sourced fresh and diverse to offer 
+                rare and beautiful flowers. Our team specializes in creating artful 
+                arrangements, tailored to your preferences, ensuring each design is a 
+                unique expression of creativity. Quality is our hallmark, guaranteeing 
+                top-notch, fresh flowers that promise enduring beauty. Our exceptional service 
+                extends beyond delivery, offering personalized attention to every order. Above all, 
+                we celebrate nature's beauty, passionately weaving it into every creation we offer</p>
             <a href="contact.php" class="btn">contact us</a>
         </div>
 
@@ -134,7 +141,9 @@ if(!isset($user_id)){
 
         <div class="content">
             <h3>who we are?</h3>
-            <p>Lorem ipsum dolor sit amet consectetur adipisicing elit. Eum odit voluptatum alias sed est in magni nihil nisi deleniti nostrum.</p>
+            <p>we're devoted to infusing life's moments with nature's beauty. 
+                Our passion for flowers drives us to craft personalized, expressive arrangements 
+                that speak volumes and create lasting memories.</p>
             <a href="#reviews" class="btn">clients reviews</a>
         </div>
 

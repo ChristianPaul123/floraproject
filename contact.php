@@ -59,7 +59,7 @@ if(isset($_POST['send'])){
 <section class="contact">
 <div class="row">
 <div class="image">
-        <img src="image/contact-img.svg" alt="">
+        
       </div> 
     <form action="" method="POST">
         <h3>send us message!</h3>
