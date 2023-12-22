@@ -58,9 +58,11 @@ if(isset($_POST['send'])){
 
 <section class="contact">
 <div class="row">
-<div class="image">
-        
-      </div> 
+<div class="mapouter">
+    <div class="gmap_canvas">
+        <iframe src="https://maps.google.com/maps?q=flora%20flower%20shop%20legaspi%20city&amp;t=&amp;z=13&amp;ie=UTF8&amp;iwloc=&amp;output=embed" frameborder="0" scrolling="no" style="width: 420px; height: 400px;"></iframe>
+    </div>
+</div>
     <form action="" method="POST">
         <h3>send us message!</h3>
         <input type="text" name="name" placeholder="enter your name" class="box" required> 
