@@ -116,14 +116,22 @@ if(!isset($user_id)){
 
         <div class="content">
             <h3>what we provide?</h3>
+<<<<<<< HEAD
             <p>At Flora Flower Shop, we pride ourselves on providing an 
+=======
+            <p>"At Flora Flower Shop, we pride ourselves on providing an 
+>>>>>>> 9728d7b6c599e23b153b3a189ad2cf17df04b524
                 array of exquisite blooms, sourced fresh and diverse to offer 
                 rare and beautiful flowers. Our team specializes in creating artful 
                 arrangements, tailored to your preferences, ensuring each design is a 
                 unique expression of creativity. Quality is our hallmark, guaranteeing 
                 top-notch, fresh flowers that promise enduring beauty. Our exceptional service 
                 extends beyond delivery, offering personalized attention to every order. Above all, 
+<<<<<<< HEAD
                 we celebrate nature's beauty, passionately weaving it into every creation we offer</p>
+=======
+                we celebrate nature's beauty, passionately weaving it into every creation we offer"</p>
+>>>>>>> 9728d7b6c599e23b153b3a189ad2cf17df04b524
             <a href="contact.php" class="btn">contact us</a>
         </div>
 
